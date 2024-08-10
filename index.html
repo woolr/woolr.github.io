@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Site</title>
+    <title>Dan - Personal Site</title>
     <style>
         :root {
             --prussian-blue: #12263a;
@@ -13,77 +13,108 @@
             --alloy-orange: #bd632f;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: var(--ecru);
+            background-color: #f5f5f5;
             color: var(--prussian-blue);
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
         }
         header {
             background: var(--prussian-blue);
             color: var(--ecru);
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: var(--alloy-orange) 3px solid;
+            padding: 2rem 0;
+            text-align: center;
         }
         header h1 {
             margin: 0;
-            text-align: center;
+            font-size: 2.5rem;
         }
-        .content {
-            margin-top: 20px;
+        nav {
+            background: var(--prussian-blue);
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: var(--ecru);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--butterscotch);
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .content-card {
             background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h2, h3 {
+        h2 {
             color: var(--amaranth-purple);
+            border-bottom: 2px solid var(--prussian-blue);
+            padding-bottom: 0.5rem;
         }
         a {
             color: var(--butterscotch);
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
             color: var(--alloy-orange);
         }
-        .project-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .project-list li {
-            background-color: var(--ecru);
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
+        footer {
+            background: var(--prussian-blue);
+            color: var(--ecru);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Your Name</h1>
-        </div>
+        <h1>Dan</h1>
     </header>
-
+    <nav>
+        <ul>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <div class="content">
+        <section id="welcome" class="content-card">
             <h2>Welcome to My Personal Site</h2>
             <p>Hello! I'm Dan, and this is my personal website. Here, you can learn more about me, my projects, and my interests.</p>
-            
-            <h3>About Me</h3>
-            <p>I'm an ML Engineer/Scientist based in LA. I'm currently at Graft</p>
-            
-            <h3>Contact Me</h3>
+        </section>
+        
+        <section id="about" class="content-card">
+            <h2>About Me</h2>
+            <p>I'm an ML Scientist and AI Engineer based in LA. I'm currently at Graft.</p>
+        </section>
+        
+        <section id="contact" class="content-card">
+            <h2>Contact Me</h2>
             <p>Feel free to reach out to me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        </div>
+        </section>
     </div>
+    <footer>
+        <p>&copy; 2024 Dan. All rights reserved.</p>
+    </footer>
 </body>
 </html>

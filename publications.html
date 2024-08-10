@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Publications - Woolr</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Woolr</h1>
-        </header>
-        <nav>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <div class="content-card">
-                <h2>Publications</h2>
-                <p>Here you can list your publications or research papers.</p>
-                <!-- Add your publications list here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Woolr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>WOOLR</h1>
+    </header>
+    <nav>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content-card">
+            <h2>Publications</h2>
+            <div class="publication-grid">
+                <div class="publication-card">
+                    <h3>Narrative Embedding: Re-Contextualization Through Attention</h3>
+                    <p class="authors">Sean Wilner, Daniel Woolridge, Madeleine Glick</p>
+                    <p class="abstract">Narrative analysis is becoming increasingly important for a number of linguistic tasks including summarization, knowledge extraction, and question answering. We present a novel approach for narrative event representation using attention to re-contextualize events across the whole story. Comparing to previous analysis we find an unexpected attachment of event semantics to predicate tokens within a popular transformer model. We test the utility of our approach on narrative completion prediction, achieving state of the art performance on Multiple Choice Narrative Cloze and scoring competitively on the Story Cloze Task.</p>
+                    <a href="https://aclanthology.org/2021.emnlp-main.105/" class="read-more" target="_blank">Read More</a>
+                </div>
+                <div class="publication-card">
+                    <h3>Sequence or Pseudo-Sequence?</h3>
+                    <h4>An Analysis of Sequential Recommendation Datasets</h4>
+                    <p class="authors">Daniel Woolridge, Sean Wilner and Madeleine Glick</p>
+                    <p class="abstract">Sequential recommendation aims to model a user’s preferences by looking at the order of interactions in a user’s history. The evaluation of such algorithms requires robust datasets with genuine sequential information. In this work we analyze the timestamp information of several commonly used datasets and show that reported timestamps are not indicative of meaningful sequential order. In the datasets explored, significant numbers of users have interactions occurring at identical timestamps. The actual order of these interactions is therefore unknowable; the interaction history is pseudo-sequential. We find that randomly shuffling the order of interactions has minimal impact on the performance of a leading sequential recommender. Particular attention is paid to MovieLens because of its frequency of use in the field of sequential recommendation. Our findings motivate the necessity for new datasets with more meaningful ordering for the evaluation of sequential recommenders.</p>
+                    <a href="https://ceur-ws.org/Vol-2955/paper8.pdf" class="read-more" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="content-card">
-                <h2>Patents</h2>
-                <p>Patents go here</p>
-                <!-- Add your publications list here -->
-            </div>
+    </div>
+    <div class="container">
+        <div class="content-card">
+            <h2>Patents</h2>
+            <p>Patents go here</p>
         </div>
-        <footer>
-            <p>&copy; 2024 Woolr. All rights reserved.</p>
-        </footer>
-        <script>
+    </div>
+    <footer>
+        <p>&copy; 2024 Woolr. All rights reserved.</p>
+    </footer>
+    <script>
         document.querySelector('.menu-toggle').addEventListener('click', function() {
-        document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
         });
-        </script>
-    </body>
+    </script>
+</body>
 </html>

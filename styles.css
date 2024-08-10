@@ -111,6 +111,63 @@ footer {
     margin-top: 2rem;
 }
 
+.publication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.publication-card {
+    background: var(--ivory);
+    border: 1px solid var(--prussian-blue);
+    border-radius: 5px;
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.publication-card h3 {
+    color: var(--prussian-blue);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.publication-card .authors {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.publication-card .abstract {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.publication-card .read-more {
+    display: inline-block;
+    background-color: var(--prussian-blue);
+    color: var(--ivory);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.publication-card .read-more:hover {
+    background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .publication-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;

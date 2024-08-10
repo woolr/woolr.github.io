@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Personal Site</title>
     <style>
+        :root {
+            --prussian-blue: #12263a;
+            --amaranth-purple: #a4243b;
+            --ecru: #d8c99b;
+            --butterscotch: #d8973c;
+            --alloy-orange: #bd632f;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: var(--ecru);
+            color: var(--prussian-blue);
         }
         .container {
             width: 80%;
@@ -19,11 +27,11 @@
             padding: 20px;
         }
         header {
-            background: #50b3a2;
-            color: white;
+            background: var(--prussian-blue);
+            color: var(--ecru);
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            border-bottom: var(--alloy-orange) 3px solid;
         }
         header h1 {
             margin: 0;
@@ -33,6 +41,27 @@
             margin-top: 20px;
             background: white;
             padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2, h3 {
+            color: var(--amaranth-purple);
+        }
+        a {
+            color: var(--butterscotch);
+            text-decoration: none;
+        }
+        a:hover {
+            color: var(--alloy-orange);
+        }
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .project-list li {
+            background-color: var(--ecru);
+            margin-bottom: 10px;
+            padding: 10px;
             border-radius: 5px;
         }
     </style>
@@ -47,17 +76,10 @@
     <div class="container">
         <div class="content">
             <h2>Welcome to My Personal Site</h2>
-            <p>Hello! I'm [Your Name], and this is my personal website. Here, you can learn more about me, my projects, and my interests.</p>
+            <p>Hello! I'm Dan, and this is my personal website. Here, you can learn more about me, my projects, and my interests.</p>
             
             <h3>About Me</h3>
-            <p>I'm a [Your Profession/Student Status] based in [Your Location]. I'm passionate about [Your Interests/Fields of Study].</p>
-            
-            <h3>My Projects</h3>
-            <ul>
-                <li>Project 1: Brief description</li>
-                <li>Project 2: Brief description</li>
-                <li>Project 3: Brief description</li>
-            </ul>
+            <p>I'm an ML Engineer/Scientist based in LA. I'm currently at Graft</p>
             
             <h3>Contact Me</h3>
             <p>Feel free to reach out to me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>

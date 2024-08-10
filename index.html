@@ -10,17 +10,17 @@
 <body>
     <header>
         <h1>Woolr</h1>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <div class="container">
         <div class="content-card">
             <h2>Welcome to My Personal Site</h2>
@@ -41,5 +41,10 @@
     <footer>
         <p>&copy; 2024 Woolr. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
